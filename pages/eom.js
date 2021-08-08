@@ -1,5 +1,6 @@
 import { Toolbar } from '../components/toolbar'
 import styles from '../styles/EOM.module.css'
+import Image from 'next/image'
 
 const EOM = ({employee}) => {
     console.log("Emp:",employee)
@@ -12,7 +13,7 @@ const EOM = ({employee}) => {
              <div  className={styles.employeeOfTheMonth}>
                  <h3>{employee.name}</h3>
                  <h6>{employee.position}</h6>
-                 <img src={employee.image} />
+                 <Image src={employee.image} />
                  <p>{employee.description}</p>
              </div>
          </div>
